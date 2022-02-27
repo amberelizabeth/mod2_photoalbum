@@ -1,0 +1,203 @@
+/* 
+ *  Page Structure and Styles
+ */
+.navbar-inner-container {
+  width: 60em;
+  max-width: 90vw;
+}
+body {
+  font : normal 300 16px/1 'Josefin Sans', sans-serif;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+h2 {
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+
+
+/*
+*  Header
+*/
+ #mainNav {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+ #hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/cover-babyhand.jpg");
+  height: 100vh;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+#hero h4 {
+  color:white;
+}
+#hero a {
+  text-decoration: none;
+}
+ .nav-link, footer a {
+  font-size: larger;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .1rem solid transparent;
+}
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .55);
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color:aquamarine;
+}
+
+/*--- Scroll down section arrow
+/*--- https://codepen.io/nxworld/pen/OyRrGy ---*/ 
+#scroll-div {
+  width: 100%;
+}
+#scroll-div a {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  color: #fff;
+  font : normal 400 25px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: 60px;
+  margin-left: -80px; 
+  padding-bottom: 30px;
+}
+#scroll-div a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -16px; 
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#scroll-div a:hover {
+  opacity: .5;
+  color:aquamarine;
+}
+#scroll-div a span:hover {
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
+/*
+*  Catelog/Gallery Section - styling done in jquery for assignment
+*/
+
+
+/*
+*  Feedback Form
+*/
+#feedback{
+  color: white;
+  background-color: #1f6657;
+}
+#feedback form{
+  max-width: 400px;
+  font-size: medium;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, .5);
+}
+#feedback form input,
+#feedback form select,
+#feedback form textarea{
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+#feedback form label{
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.error{
+  background-color: #d22d47;
+  font-style: italic;
+  color: white;
+}
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+#feedback button{
+  width: 120px;
+  text-transform: uppercase;
+}
+#feedback form > div:not(:first-child) label,
+#submitBtn { 
+  margin-top: 30px;
+}
+
+
+/*
+*  Validation Section
+*/
+pre {
+  color:darkcyan;
+  font-size: 16px;
+  white-space: pre-wrap; 
+  max-width:100%;
+  height:auto;
+}
+.iframe-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 1px double rgba(0, 0, 0, 0.5); 
+}
+/* Resize the iframe validated.html frame for different media sizes */
+@media (min-width: 680px){
+  .iframe-container {
+    min-width: 300px;
+  }
+}
+@media (min-width: 800px){
+  .iframe-container {
+    min-width: 440px;
+  }
+}
+@media (min-width: 1000px){
+  .iframe-container {
+    min-width: 540px;
+  }
+}
+@media (min-width: 1200px){
+  .iframe-container {
+    min-width: 700px;
+  }
+}
+
+
+/*
+*  Footer
+*/
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: aquamarine;
+}
